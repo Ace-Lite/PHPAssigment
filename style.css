@@ -1,0 +1,158 @@
+html, body {
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+body {
+	margin: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(0, 84, 101);
+    color: white;
+}
+
+body #search_bar {
+    position: fixed;
+    display: flex;
+
+    top: 0%;
+    justify-content: center;
+
+    width: 100%;
+    height: 50px;
+    z-index: 1000;
+
+    background-image: linear-gradient(#6d6d6d, #00373c);
+}
+
+#glass_bg {
+    display:inline-block;
+    position:fixed;
+
+    margin-left: auto;
+    margin-right: auto;    
+    left: 7.5%;
+
+    min-width: 800px;
+    width: 85%;
+    height: 160%;
+    z-index: -4;
+
+    border: 1px solid white;
+    background-color: rgba(98, 98, 98, 0.561);
+
+    backdrop-filter: blur(8px);
+
+
+    overflow-y: scroll;
+}
+
+#dataTable {
+    display: table;
+    margin-top: 180px;
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 95%;
+    height: 100%;
+
+    margin-bottom: 40%;
+}
+
+#searching {
+    margin-top: 12px;
+    color: white;
+}
+
+#pageController {
+    padding: 12px;
+    color: white;
+}
+
+.dropbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+
+    cursor: pointer;    
+}
+
+#dropdown {
+    margin-left: auto;
+    margin-right: 0%;
+
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    right:0px;
+    
+    position: absolute;
+    color: black;
+    background-color: #efefef;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+#filter {
+    background-color: #a7b6b1;
+    color: black;
+    padding: 12px 8px;
+    text-decoration: none;
+    display: block;
+}
+
+#pageController button {
+    background-color: #04AA6D;
+    border: none;
+    padding: 4px;
+    margin-top: -1px;
+    color: white;
+}
+
+#pageController button:hover {
+    background-color: #1ac889;
+    cursor: pointer;
+}
+
+#filter:hover {
+    background-color: #7bcf8a;
+}
+
+#dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#dropdown:hover .dropbtn {
+    background-color: #286b2a;
+}
+
+#product {
+    background-color: rgb(34, 56, 67);
+    border-radius: 4px;
+    color: rgb(255, 255, 255);
+
+    margin-top: -88px;
+    padding: 8px;
+    margin-bottom: 120px;
+
+
+}
+
+#Pozice {
+    font-size: 24px;
+}
+
+#tableContents {
+    display:grid;
+    width: auto;
+    margin-left:8%;
+    margin-top:-32px;
+}
+
+#Popis {
+    height:48px;
+}
