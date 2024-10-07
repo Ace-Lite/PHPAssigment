@@ -1,6 +1,6 @@
 <!--
 
-    Tento skript, načte data ze SQL serveru.
+    Tento PHP, načte data ze SQL serveru.
 
 -->
 
@@ -25,6 +25,8 @@
 
 <!--
 
+    Vytvoření PHP_Manager objektu
+    -- see: ../scripts/javascript/MANAGER.js
 
 -->
 

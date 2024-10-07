@@ -7,6 +7,8 @@ class PHP_Manager {
     search = "";
 
     //#region Functions
+
+        //  updatuje data s tím co se změnilo v kontejneru
         update(id, ref, value) {
             if (this.data[id] === undefined)
                 return;
@@ -17,6 +19,7 @@ class PHP_Manager {
             this.data[id][ref] = value;
         };        
 
+        //  kvalifikuje na základě search stringu zda předmět splňuje podmínky
         qualifies(search, select) {
             if (!search)
                 return true;
@@ -72,6 +75,7 @@ class PHP_Manager {
             return include_element;
         }
 
+        //  updatuje tabulku v index.php na základě všecho    
         filter(home) {
             //console.log(this.data);
             
@@ -116,12 +120,13 @@ class PHP_Manager {
             }   
             document.getElementById("dataTable").innerHTML = html_output;
         };
-
+        
         searchUpdate(search) {
             this.search = search;
             this.filter(true);
         };
 
+        //  exportuje CSV soubor na základě search stringu a pořadí        
         csvExport() {
             var csv_content = "data:text/csv;charset=utf-8;";
             let qualify = this.qualifies;
@@ -169,6 +174,8 @@ class PHP_Manager {
             this.filter();
         };
 
+        //  navigátor
+        
         prevPage() {
             if (this.#page > 0)
                 --this.#page;

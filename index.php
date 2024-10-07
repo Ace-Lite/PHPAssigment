@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 
 <html lang="en">
+
+    <!--
+
+        HEAD
+
+    -->
+
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X_UA_Compatible", content="IE=edge">
@@ -10,15 +17,13 @@
     </head>
 
     <!--
-    
-        TODO:
-        4. HTML/CSS nonsense;
-        5. Dokumentace;
-        6. Upload na GitHub
-    
+
+        BODY
+
     -->
 
     <body>
+        <!-- Hlavní skript -->   
         <script src="scripts/javascript/MANAGER.js"></script>
 
         <!-- Konfigurace -->
@@ -71,6 +76,7 @@
                 </div>
         </class>
 
+        <!-- Tabulkový kontejner -->   
         <div id ='glass_bg'>
             <class id='dataTable'></class>
         </div>
